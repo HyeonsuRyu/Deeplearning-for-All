@@ -15,8 +15,10 @@ import tensorflow as tf
 np.random.seed(3)
 tf.random.set_seed(3)
 
+
 # 준비된 수술 환자 데이터를 불러들입니다.
-Data_set = np.loadtxt("../../dataset/ThoraricSurgery.csv", delimiter=",")
+Data_set = np.loadtxt("dataset/ThoraricSurgery.csv", delimiter=",")
+
 
 # 환자의 기록과 수술 결과를 X와 Y로 구분하여 저장합니다.
 X = Data_set[:,0:17]
